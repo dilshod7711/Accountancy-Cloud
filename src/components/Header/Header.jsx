@@ -7,18 +7,26 @@ const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [randomMeme, setRandomMeme] = useState("");
-
   const memes = [
-    "https://media.giphy.com/media/l2JhLzGfG1t0wKgrO/giphy.gif",
-    "https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif",
-    "https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif",
-    "https://media.giphy.com/media/3oKIPwoeGErMmaI43u/giphy.gif",
-    "https://media.giphy.com/media/l0MYC0LajbaPoEADu/giphy.gif",
-    "https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif",
-    "https://media.giphy.com/media/12XDYvMJNcmLgQ/giphy.gif",
-    "https://media.giphy.com/media/3oz8xKaR836UJOYeOc/giphy.gif",
-    "https://media.giphy.com/media/fAnEC88LccN7a/giphy.gif",
-    "https://media.giphy.com/media/3o7aTskHEUdgCQAXde/giphy.gif",
+    "https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif", // "When your code finally works"
+    "https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif", // "Typing furiously like a programmer"
+    "https://media.giphy.com/media/fAnEC88LccN7a/giphy.gif", // "Fixing one bug creates five more"
+    "https://media.giphy.com/media/26Ff6yRPLzD4G1b5u/giphy.gif", // "Deploying on Friday"
+    "https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif", // "When the code runs without errors"
+    "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif", // "Cat typing code"
+    "https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif", // "Debugging at 3 AM"
+    "https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif", // "Infinite loop realization"
+    "https://media.giphy.com/media/26Ff6V8y5zE1P1Yp2/giphy.gif", // "Trying to fix production bugs"
+    "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif", // "When StackOverflow has your exact answer"
+    "https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif", // "When your team finally fixes the issue"
+    "https://media.giphy.com/media/5xaOcLGvzHxDKjufnLW/giphy.gif", // "Junior dev when code works"
+    "https://media.giphy.com/media/xT0GqnY1KkB4d3CzI0/giphy.gif", // "Senior dev reviewing code"
+    "https://media.giphy.com/media/3o7btQZJbJ3lJxkWbK/giphy.gif", // "When you forget a semicolon"
+    "https://media.giphy.com/media/d10dMmzqCYqQ0/giphy.gif", // "When code runs perfectly first try"
+    "https://media.giphy.com/media/l0HlTy9x8FZo0XO1i/giphy.gif", // "Me explaining code I wrote 6 months ago"
+    "https://media.giphy.com/media/3o6ZsX2dK2jzY2ZkTu/giphy.gif", // "Deploying to production"
+    "https://media.giphy.com/media/xT5LMW8hD8Wm0q6XQ8/giphy.gif", // "Frontend vs Backend devs"
+    "https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif", // "When code reviews get heated"
   ];
 
   function handleOpenModal() {
